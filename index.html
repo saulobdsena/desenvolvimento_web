@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Pessoal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortifolioDevWeb</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Primeiro projeto</h1>
+  <header>
+    <nav>
+      <h1></h1>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#repositorios">Repositorios</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="btn-dark">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Olá! Eu sou <strong>Saulo Sena</strong>, Atualmente cursando o 4º semestre de Ciências da Computação pela Universidade de Fortaleza
+(Unifor), estou sempre buscando aprender coisas novas e encontrar soluções criativas. Gosto de
+encarar desafios que me ajudem a crescer tanto pessoal quanto profissionalmente, estou
+sempre aberto a explorar novas possibilidades dentro da área e a me aprofundar em diferentes
+temas que me motivam a evoluir.</p>
+    </section>
+  <!--Seção de Repositorio de Python-->
+    <section id="repositorios">
+      <h2>Repositorio Python</h2>
+      <div class="grid">
+        <article>
+          <h3>Repositorio Python</h3>
+          <p>Descrição do projeto 1.</p>
+          <a href="#">Ver mais</a>
+        </article>
+        <article>
+          <h3>Projeto 2</h3>
+          <p>Descrição do projeto 2.</p>
+          <a href="#">Ver mais</a>
+        </article>
+      </div>
+      <h2>Repositorio Java</h2>
+      <div class="grid">
+        <article>
+          <h3>Repositorio Python</h3>
+          <p>Descrição do projeto 1.</p>
+          <a href="#">Ver mais</a>
+        </article>
+        <article>
+          <h3>Projeto 2</h3>
+          <p>Descrição do projeto 2.</p>
+          <a href="#">Ver mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p> <a href="saulobdsena@gmail.com">saulobdsena@gmail.com</a></p>
+      <p> <a href="https://github.com/saulobdsena" target="_blank">Meu GitHub</a></p>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
