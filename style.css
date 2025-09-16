@@ -1,93 +1,99 @@
-/* cores padrão */
-:root {
-  --bg: #ffffff;
-  --texto: #222;
-  --primaria: #0066ff;
-  --card: #f5f5f5;
-}
-
-/* modo escuro */
-body.dark {
-  --bg: #121212;
-  --texto: #eee;
-  --primaria: #4da6ff;
-  --card: #1e1e1e;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--texto);
-  line-height: 1.6;
-  scroll-behavior: smooth; /* rolagem suave */
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
-  background: var(--primaria);
+  background-color: #2980b9;
+  padding: 20px 0;
   color: white;
-  padding: 1rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav h1 {
-  font-size: 1.2rem;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
+  padding: 0;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
 }
 
-nav ul a {
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-#btn-dark {
-  background: transparent;
+button {
+  background-color: #34495e;
+  color: white;
+  padding: 10px 15px;
   border: none;
-  font-size: 1.2rem;
   cursor: pointer;
-}
-
-main {
-  padding: 2rem;
+  margin-top: 15px;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-article {
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 8px;
+.card {
+  background-color: #ffffff;
+  padding: 20px;
 }
 
-a {
-  color: var(--primaria);
+.card a {
+  color: #2980b9;
+  text-decoration: none;
 }
 
 footer {
+  background-color: #2980b9;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  background: var(--card);
+  padding: 20px;
+}
+
+body.dark-theme {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark-theme header {
+  background-color: #1abc9c;
+}
+
+body.dark-theme section {
+  background-color: #34495e;
+}
+
+body.dark-theme .card {
+  background-color: #2c3e50;
+}
+
+body.dark-theme footer {
+  background-color: #1abc9c;
 }
